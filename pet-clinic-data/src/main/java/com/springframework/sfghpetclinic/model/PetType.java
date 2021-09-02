@@ -5,7 +5,7 @@ package com.springframework.sfghpetclinic.model;
  * @version 1.0
  * @since 01/09/21
  */
-public class PetType {
+public class PetType extends BaseEntity{
     private String name;
 
     public String getName() {
