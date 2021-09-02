@@ -6,5 +6,4 @@ package com.springframework.sfghpetclinic.model;
  * @since 01/09/21
  */
 public class Owner extends Person{
-
 }
