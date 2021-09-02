@@ -39,7 +39,6 @@
             </plugins>
         </pluginManagement>
     </build>
-
     <scm>
         <developerConnection>scm:git:https://github.com/fascistcoder/sfgh-pet-clinic.git</developerConnection>
       <tag>HEAD</tag>
