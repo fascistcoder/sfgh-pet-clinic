@@ -5,5 +5,5 @@ package com.springframework.sfghpetclinic.model;
  * @version 1.0
  * @since 01/09/21
  */
-public class Vet extends Person {
+public class Vet extends Person{
 }
