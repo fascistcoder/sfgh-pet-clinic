@@ -1,6 +1,7 @@
 package com.springframework.sfghpetclinic.controllers;
 
 import com.springframework.sfghpetclinic.services.VetService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class VetController {
     private final VetService vetService;
 
+    @Autowired
     public VetController(VetService vetService) {
         this.vetService = vetService;
     }

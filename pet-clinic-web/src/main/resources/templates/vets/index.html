@@ -16,10 +16,11 @@
     </thead>
     <tbody>
     <tr th:each="vet : ${vets}">
-        <td th:text="${vet.id}"></td>
+        <td th:text="${vet.id}">1</td>
         <td th:text="${vet.firstName}">John</td>
         <td th:text="${vet.lastName}">Doe</td>
     </tr>
     </tbody>
+</table>
 </body>
 </html>
