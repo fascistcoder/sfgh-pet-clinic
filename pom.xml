@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.springframework</groupId>
     <artifactId>sfgh-pet-clinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>sfgh-pet-clinic</name>
     <description>sfgh-pet-clinic</description>
     <properties>
@@ -41,6 +41,6 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/fascistcoder/sfgh-pet-clinic.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>sfgh-pet-clinic-0.0.3</tag>
   </scm>
 </project>
