@@ -1,8 +1,10 @@
 package com.springframework.sfghpetclinic.bootstrap;
 
 import com.springframework.sfghpetclinic.model.Owner;
+import com.springframework.sfghpetclinic.model.PetType;
 import com.springframework.sfghpetclinic.model.Vet;
 import com.springframework.sfghpetclinic.services.OwnerService;
+import com.springframework.sfghpetclinic.services.PetTypeService;
 import com.springframework.sfghpetclinic.services.VetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -18,15 +20,27 @@ public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetTypeService petTypeService;
 
     @Autowired
-    public DataLoader(OwnerService ownerService, VetService vetService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
+
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType saveDogPetType = petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        dog.setName("Cat");
+        PetType saveCatPetType = petTypeService.save(cat);
+
+
         Owner owner = new Owner();
         owner.setFirstName("Pulkit");
         owner.setLastName("Aggarwal");
