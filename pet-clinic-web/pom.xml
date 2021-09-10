@@ -111,7 +111,7 @@
                         </cssDestinationFolder>
                         <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
                         <extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
-                        <contextFolder>${basedir}/src/main/resources/static/resources/less</contextFolder>
+                        <contextFolder>${basedir}/src/main/less</contextFolder>
                         <ignoreMissingResources>false</ignoreMissingResources>
                     </configuration>
                     <dependencies>
