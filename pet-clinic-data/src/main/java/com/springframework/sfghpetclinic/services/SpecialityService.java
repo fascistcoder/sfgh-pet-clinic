@@ -7,5 +7,5 @@ import com.springframework.sfghpetclinic.model.Speciality;
  * @version 1.0
  * @since 11/09/21
  */
-public interface SpecialitiesService extends CrudService<Speciality, Long> {
+public interface SpecialityService extends CrudService<Speciality, Long> {
 }
