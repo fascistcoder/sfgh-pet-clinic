@@ -24,17 +24,6 @@
     <dependencies>
 
         <dependency>
-            <groupId>ro.isdc.wro4j</groupId>
-            <artifactId>wro4j-core</artifactId>
-            <version>1.10.1</version>
-        </dependency>
-        <dependency>
-            <groupId>ro.isdc.wro4j</groupId>
-            <artifactId>wro4j-extensions</artifactId>
-            <version>1.10.1</version>
-        </dependency>
-
-        <dependency>
             <artifactId>pet-clinic-data</artifactId>
             <groupId>com.springframework</groupId>
             <version>0.0.4-SNAPSHOT</version>
@@ -107,12 +96,10 @@
                     <configuration>
                         <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory
                         </wroManagerFactory>
-                        <cssDestinationFolder>${project.build.directory}/classes/static/resources/css
-                        </cssDestinationFolder>
+                        <cssDestinationFolder>${project.build.directory}/classes/static/resources/css</cssDestinationFolder>
                         <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
                         <extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
                         <contextFolder>${basedir}/src/main/less</contextFolder>
-                        <ignoreMissingResources>false</ignoreMissingResources>
                     </configuration>
                     <dependencies>
                         <dependency>
@@ -125,6 +112,17 @@
                             <artifactId>mockito-core</artifactId>
                             <version>3.9.0</version>
                         </dependency>
+                        <dependency>
+                            <groupId>ro.isdc.wro4j</groupId>
+                            <artifactId>wro4j-core</artifactId>
+                            <version>1.10.1</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>ro.isdc.wro4j</groupId>
+                            <artifactId>wro4j-extensions</artifactId>
+                            <version>1.10.1</version>
+                        </dependency>
+
                     </dependencies>
                 </plugin>
 
