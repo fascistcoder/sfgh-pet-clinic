@@ -1,5 +1,6 @@
 package com.springframework.sfghpetclinic.model;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 /**
@@ -7,9 +8,18 @@ import java.time.LocalDate;
  * @version 1.0
  * @since 10/09/21
  */
+@Entity
+@Table(name = "visits")
 public class Visit extends BaseEntity {
+
+    @Column(name = "date")
     private LocalDate date;
+
+    @Column(name = "description")
     private String description;
+
+    @ManyToOne
+    @JoinColumn(name = "pet_id")
     private Pet pet;
 
     public LocalDate getDate() {
