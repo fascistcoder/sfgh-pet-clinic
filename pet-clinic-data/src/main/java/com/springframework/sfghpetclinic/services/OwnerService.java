@@ -8,5 +8,5 @@ import com.springframework.sfghpetclinic.model.Owner;
  * @since 03/09/21
  */
 public interface OwnerService extends CrudService<Owner, Long> {
-    Owner findByLateName(String lastName);
+    Owner findByLastName(String lastName);
 }

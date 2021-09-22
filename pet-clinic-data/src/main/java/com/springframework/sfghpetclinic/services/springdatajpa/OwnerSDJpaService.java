@@ -59,7 +59,7 @@ public class OwnerSDJpaService implements OwnerService {
     }
 
     @Override
-    public Owner findByLateName(String lastName) {
+    public Owner findByLastName(String lastName) {
         return ownerRepositories.findByLastName(lastName);
     }
 }
