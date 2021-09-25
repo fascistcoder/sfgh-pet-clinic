@@ -116,7 +116,6 @@ public class DataLoader implements CommandLineRunner {
         vet1.getSpecialities().add(saveSurgery);
 
         vetService.save(vet1);
-
         System.out.println("Loaded Pets...");
     }
 }
